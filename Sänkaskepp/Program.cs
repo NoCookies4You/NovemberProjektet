@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using Console = Colorful.Console;
 
-namespace NovemberProjektet
+namespace Sänkaskepp
 {
     class Program
     {

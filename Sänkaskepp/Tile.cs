@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using Console = Colorful.Console;
 
-namespace NovemberProjektet
+namespace Sänkaskepp
 {
     class Tile
     {
@@ -45,6 +45,7 @@ namespace NovemberProjektet
             }
             //I slutet så sätts Foregroundcolor tillbaka till vit vilket är standarden för konsollen.
             Console.ForegroundColor = Color.White;
+
         }
     }
 }
