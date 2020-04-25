@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NovemberProjektet
+namespace Sänkaskepp
 {
     class Boat : Tile
     {
@@ -21,7 +21,7 @@ namespace NovemberProjektet
         //Här skulle metoden för att placera ut Boat's i Tile nätet vara.
         //Väl färdig skulle denna metod tagit in koordinater, kolla att dem inte redan är upptagna, och sedan göra om dem tilesen i brädet till boats
         //Sedan skulle en instans av Boat skapas där en lista med alla koordinater båten tar upp sparas
-        public void Place()
+        public void PlaceBoat(int[] startingPoint, int direction, int length, Tile[,] selectedBoard)
         {
 
 
