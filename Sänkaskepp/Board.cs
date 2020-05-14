@@ -12,13 +12,14 @@ namespace Sänkaskepp
     {
         //En instans av en Board sparar ett rutnät av Tiles med en bestämd storlek
         public Tile[,] tiles;
-        private int size;
+        private int size = 10;
 
         //När en Board skapas väljs huruvida den ska fyllas upp av FriendlyTiles eller EnemyTiles.
         public Board(bool friendly)
         {
-            size = 10;
+            //En Tile array skapas med storleken baserad på "size" variabeln
             tiles = new Tile[size, size];
+            //FillBoard används för att fylla i den tomma arrayen med en av subklasserna av Tile
             if (friendly == true)
             {
                 tiles = FillBoard<FriendlyTile>(tiles);
@@ -57,6 +58,7 @@ namespace Sänkaskepp
                 return board;
             }
         }
+
         //Printar ut ett helt bräde med hjälp av Tiles print metod
         public void Print()
         {
@@ -75,6 +77,11 @@ namespace Sänkaskepp
             }
             System.Console.WriteLine();
             Console.WriteLine("      A B C D E F G H I J", Color.Gray);
+        }
+
+        public void EditSelectedVariable(int[] position, bool value, bool friendly)
+        {
+
         }
     }
 }

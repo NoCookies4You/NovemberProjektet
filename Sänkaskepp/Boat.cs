@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sänkaskepp
 {
-    class Boat : Tile
+    class Boat
     {
         //Boat använder sig av Tile's konstruktor, men Visual studio ger ett felmedellande ifall denna bit av kod inte existerar.
         //vet ärligt talat inte riktigt varför, det var ett tag sedan jag skrev koden. Kommer ihåg att jag diskuterade med ett flertal personer om varför denna kod fungerar
-        public Boat(int x, int y) : base(x, y)
+        public Boat(int x, int y)
         {
 
         }
